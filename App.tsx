@@ -1,15 +1,14 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { Button } from "react-native-elements";
 import { createBottomTabNavigator, createAppContainer } from 'react-navigation'
-import styled,{css} from "styled-components";
+import TabView from "./Component/TabView";
 
 class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={{color: "#033550", fontSize : 30}}> 돈 두뎃 </Text>
-        <Button title="이것인가" type="outline"/>
+        <Text>take this</Text>
+        <Text>take this2</Text>
       </View>
     );
   }
@@ -25,11 +24,10 @@ const TabNavigator = createBottomTabNavigator({
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#FFF',
     alignItems: 'center',
     justifyContent: 'center',
   },
 });
 
 export default createAppContainer(TabNavigator)
-
